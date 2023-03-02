@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int solve(vector<int>&prediff, int B,int K){
-    for(int i=0;i<=B;i++){
+    for(int i=0;i<B;i++){
         for(int j=0;j<B-i-1;j++){
             int d = prediff[j+i]-prediff[j-1];
             if(d>=K){
